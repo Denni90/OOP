@@ -1,4 +1,5 @@
 package main.clients;
+import javax.swing.*;
 import java.time.LocalDate;
 import java.lang.String;
 
@@ -7,7 +8,6 @@ public class Animal {
     protected Owner owner;
     protected LocalDate birthDate;
     protected Illness illness;
-
 
     //Пустой конструктор по умолчанию
 
@@ -24,17 +24,16 @@ public class Animal {
     }
 
 // Тестирование
-
     /**
-     * public Animal() {
-     * this.nickName = "Кличка";
-     * this.owner = new Owner("Хозяин");
-     * this.birthDate = LocalDate.now();
-     * this.illness = new Illness("Болеет");
-     * }
+     public Animal() {
+     this.nickName = "Кличка";
+     this.owner = new Owner("Хозяин");
+     this.birthDate = LocalDate.now();
+     this.illness = new Illness("Болеет");
+     }
      */
 
-
+/**
     public String getNickName() {
         return nickName;
     }
@@ -50,16 +49,15 @@ public class Animal {
     public Illness getIllness() {
         return illness;
     }
+*/
 
-    public String getType() {
-        return getClass().getSimpleName();
-    }
-
+/**
     public void setIllness(Illness illness) {
 
         this.illness = illness;
     }
-
+ */
+/**
     public void lifeCycle() {
         wakeUP("12.30");
         hunt();
@@ -91,17 +89,18 @@ public class Animal {
     public String toString() {
         return String.format("nickName = %s, bd = %s owner = %s, illness = %s", nickName, birthDate, owner, illness);
     }
-
-
-        public void swim() {
-            System.out.println("Животное плавает");
-        }
-        public void toGO() {
-            System.out.println("Животное двигается");
-        }
-        public void fly() {
-            System.out.println("Животное летает");
-
+*/
+    public static void swim() {
+    System.out.println("Животное умеет плавать ");
+    }
+    public static void toGO() {
+        System.out.println("Животное умеет ходить");
+    }
+    public static void fly() {
+        System.out.println("Животное умеет летать");
+    }
+    public static void canNot() {
+        System.out.println("Животное не умеет этого");
     }
 }
 
