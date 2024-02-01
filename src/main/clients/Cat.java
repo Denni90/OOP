@@ -9,6 +9,18 @@ public class Cat extends Animal {
         this.discount = discount;
     }
 
+    public String getType() {
+        return getClass().getSimpleName();
+    }
+public static void Action(String Action) {
+    Animal cat = new Cat();
+    if (Action.equals("toGo")) {
+        cat.toGO();
+    } else {
+        cat.canNot();
+    }
+}
+
     public Cat() {
         super();
         this.discount = 10D;

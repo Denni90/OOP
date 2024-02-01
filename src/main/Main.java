@@ -1,16 +1,43 @@
 package main;
 import main.clients.*;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 public class Main {
-    
+
     public static void main(String[] args){
+
 
         Animal cat = new Cat();
         Animal goodBoy = new Dog();
-        Animal fish = new Fish();
+        Animal Fish = new Fish();
         Animal duck = new Duck();
+
+    Cat Cat = new Cat();
+    System.out.println(Cat.getType());
+    Cat.Action("fly");
+    Cat.Action("toGo");
+    Cat.Action("swim");
+
+    Dog Dog = new Dog();
+    System.out.println(Dog.getType());
+    Dog.Action("fly");
+    Dog.Action("swim");
+    Dog.Action("toGo");
+
+    Duck Duck = new Duck();
+    System.out.println(Duck.getType());
+    Duck.Action("fly");
+    Duck.Action("swim");
+    Duck.Action("toGo");
+
+    Fish fish = new Fish();
+    System.out.println(fish.getType());
+    fish.Action("fly");
+    fish.Action("swim");
+    fish.Action("toGo");
+
 
 
 
@@ -30,7 +57,9 @@ public class Main {
         cat.setIllness(new Illness(null));
         System.out.println(cat.getIllness());
 
+
         System.out.println(cat.getType());
+
         cat.lifeCycle();
 
 
@@ -57,7 +86,11 @@ public class Main {
 
         // Тестирование
 /**
+
         Animal testAnimal = new Animal();y
+
+        Animal testAnimal = new Animal();
+
         System.out.println(testAnimal.getNickName());
 
 

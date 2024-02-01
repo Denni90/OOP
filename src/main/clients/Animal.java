@@ -1,5 +1,6 @@
 package main.clients;
 import javax.swing.*;
+
 import java.time.LocalDate;
 import java.lang.String;
 
@@ -24,6 +25,17 @@ public class Animal {
     }
 
 // Тестирование
+
+    /**
+     * public Animal() {
+     * this.nickName = "Кличка";
+     * this.owner = new Owner("Хозяин");
+     * this.birthDate = LocalDate.now();
+     * this.illness = new Illness("Болеет");
+     * }
+     */
+
+
     /**
      public Animal() {
      this.nickName = "Кличка";
@@ -34,6 +46,7 @@ public class Animal {
      */
 
 /**
+>>>>>>> 5b35462 (Modified)
     public String getNickName() {
         return nickName;
     }
@@ -49,15 +62,25 @@ public class Animal {
     public Illness getIllness() {
         return illness;
     }
+<<<<<<< HEAD
+
+    public String getType() {
+        return getClass().getSimpleName();
+    }
+
+=======
 */
 
 /**
+>>>>>>> 5b35462 (Modified)
     public void setIllness(Illness illness) {
 
         this.illness = illness;
     }
+
  */
 /**
+
     public void lifeCycle() {
         wakeUP("12.30");
         hunt();
@@ -89,6 +112,19 @@ public class Animal {
     public String toString() {
         return String.format("nickName = %s, bd = %s owner = %s, illness = %s", nickName, birthDate, owner, illness);
     }
+<<<<<<< HEAD
+
+
+        public void swim() {
+            System.out.println("Животное плавает");
+        }
+        public void toGO() {
+            System.out.println("Животное двигается");
+        }
+        public void fly() {
+            System.out.println("Животное летает");
+
+=======
 */
     public static void swim() {
     System.out.println("Животное умеет плавать ");
@@ -101,6 +137,7 @@ public class Animal {
     }
     public static void canNot() {
         System.out.println("Животное не умеет этого");
+
     }
 }
 

@@ -8,6 +8,22 @@ public class Dog extends Animal {
         this.discount = discount;
     }
 
+    public String getType() {
+        return getClass().getSimpleName();
+    }
+
+    public void Action(String Action) {
+        Animal goodBoy = new Dog();
+        if (Action.equals("toGo")){
+            goodBoy.toGO();}
+            else if (Action.equals("swim")) {
+            goodBoy.swim();}
+            else {
+            goodBoy.canNot();
+        }
+    }
+
+
     public Dog() {
         super();
         this.discount = 10D;

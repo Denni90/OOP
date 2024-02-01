@@ -6,6 +6,19 @@ import java.time.LocalDate;
             super(nickName, owner, birthDate, illness);
             this.discount = discount;
         }
+
+        public String getType() {
+            return getClass().getSimpleName();
+        }
+        public void Action(String Action) {
+            Animal fish = new Fish();
+            if (Action.equals("swim")) {
+                fish.swim();
+            } else {
+                fish.canNot();
+            }
+        }
+
         public Fish() {
             super();
             this.discount = 10D;

@@ -9,6 +9,20 @@ public class Duck extends Animal {
         super(nickName, owner, birthDate, illness);
         this.discount = discount;
     }
+
+
+    public String getType() {
+        return getClass().getSimpleName();
+    }
+    public void Action(String Action) {
+        Animal Duck = new Duck();
+        switch (Action) {
+            case "toGo" -> Duck.toGO();
+            case "swim" -> Duck.swim();
+            case "fly" -> Duck.fly();
+        }
+        }
+
     public Duck() {
         super();
         this.discount = 10D;
