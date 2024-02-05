@@ -1,6 +1,6 @@
 package main.clients;
 import java.time.LocalDate;
-public class Dog extends Animal {
+public class Dog extends Animal implements Goable, Huntable {
     Double discount;
 
     public Dog(String nickName, Owner owner, LocalDate birthDate, Illness illness, Double discount) {
@@ -11,7 +11,7 @@ public class Dog extends Animal {
     public String getType() {
         return getClass().getSimpleName();
     }
-
+/*
     public void Action(String Action) {
         Animal goodBoy = new Dog();
         if (Action.equals("toGo")){
@@ -22,7 +22,7 @@ public class Dog extends Animal {
             goodBoy.canNot();
         }
     }
-
+*/
 
     public Dog() {
         super();
@@ -37,4 +37,13 @@ public class Dog extends Animal {
         this.discount = discount;
     }
 
+
+    @Override
+    public void eat() {
+        System.out.println(("Собака ест мясо"));
+    }
+    @Override
+    public void toGO() {
+        System.out.println("Животное умеет ходить");
+    }
 }

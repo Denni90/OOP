@@ -1,32 +1,28 @@
 package main;
-import main.clients.*;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 public class Main {
 
-    public static void main(String[] args){
+/**    public static void main(String[] args){
 
 
-        Animal cat = new Cat();
+       Animal cat = new Cat();
         Animal goodBoy = new Dog();
         Animal Fish = new Fish();
         Animal duck = new Duck();
 
-    Cat Cat = new Cat();
-    System.out.println(Cat.getType());
+    Cat = new Cat();
+        System.out.println(Cat.getType());
     Cat.Action("fly");
     Cat.Action("toGo");
     Cat.Action("swim");
 
-    Dog Dog = new Dog();
+    Dog = new Dog();
     System.out.println(Dog.getType());
     Dog.Action("fly");
     Dog.Action("swim");
     Dog.Action("toGo");
 
-    Duck Duck = new Duck();
+    Duck = new Duck();
     System.out.println(Duck.getType());
     Duck.Action("fly");
     Duck.Action("swim");
@@ -41,7 +37,7 @@ public class Main {
 
 
 
-/**
+*
         Animal cat = new Animal("Солнышко", new Owner("Денис Сергеевич"),
                 LocalDate.of(2020,12,5), new Illness("Лишай")); // Экземпляр класса
 
@@ -82,10 +78,11 @@ public class Main {
         }
 
         System.out.println(cat);
- */
+
+
 
         // Тестирование
-/**
+
 
         Animal testAnimal = new Animal();y
 
@@ -100,7 +97,8 @@ public class Main {
         System.out.println(ducky.getBirthDate());
         System.out.println(ducky.getIllness());
         System.out.println(ducky.getType());
-        System.out.println(ducky);*/
-    }
+        System.out.println(ducky);
 
+    }
+*/
 }

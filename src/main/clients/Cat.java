@@ -1,25 +1,13 @@
 package main.clients;
 import java.time.LocalDate;
 
-public class Cat extends Animal {
+public class Cat extends Animal implements  Goable, Huntable{
     Double discount;
 
     public Cat(String nickName, Owner owner, LocalDate birthDate, Illness illness, Double discount) {
         super(nickName, owner, birthDate, illness);
         this.discount = discount;
     }
-
-    public String getType() {
-        return getClass().getSimpleName();
-    }
-public static void Action(String Action) {
-    Animal cat = new Cat();
-    if (Action.equals("toGo")) {
-        cat.toGO();
-    } else {
-        cat.canNot();
-    }
-}
 
     public Cat() {
         super();
@@ -33,5 +21,29 @@ public static void Action(String Action) {
     public void setDiscount(Double discount) {
         this.discount = discount;
     }
+
+    /*
+        public static void Action(String Action) {
+            Animal cat = new Cat();
+            if (Action.equals("toGo")) {
+                cat.toGO();
+            } else {
+                cat.canNot();
+            }
+        }
+        */
+    public String getType() {
+        return getClass().getSimpleName();
+    }
+    @Override
+    public void eat() {
+        System.out.println("Кошка просто ест");
+    }
+    @Override
+    public void toGO() {
+        System.out.println("Животное умеет ходить");
+    }
+
 }
+
 
